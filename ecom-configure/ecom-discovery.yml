@@ -1,0 +1,23 @@
+server:
+  port: 8761
+eureka:
+  datacenter: main
+  environment: local
+  instance:
+    hostname: ecom-discovery
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+  server:
+    enableSelfPreservation: false
+
+management:
+  security:
+    enabled: false
+
+ecom:
+    info:
+        description: "This is good start for service discovery"
+        version: V1.1

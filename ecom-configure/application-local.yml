@@ -1,0 +1,28 @@
+spring:
+    cloud:
+        stream:
+            kafka:
+                binder:
+                    brokers: "${ecom.kafka.server}:9092" #kafka server
+                    zkNodes: "${ecom.kafka.server}:2181" #zookeeper server
+                    headers:
+                        - X-B3-TraceId
+                        - X-B3-SpanId
+                        - X-B3-Sampled
+                        - X-B3-ParentSpanId
+                        - X-Span-Name
+                        - X-Process-Id
+                        - spanId
+                        - spanSampled
+                        - spanProcessId
+                        - spanParentSpanId
+                        - spanTraceId
+                        - spanName
+                        - messageSent
+#ecom:
+#    info:
+#        description: "This is good start"
+#        version: V1
+#    kafka:
+#        server: localhost
+

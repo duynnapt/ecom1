@@ -1,0 +1,7 @@
+server:
+  port: 8881
+
+ecom:
+    info:
+        description: "This is good start, and is overriden by ecom-core, is used in ecom-core only"
+        version: V1.1
