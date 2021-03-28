@@ -7,5 +7,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/duynnapt/ecom-configure
-          default-label: good_config
+          uri: https://github.com/duynnapt/ecom1-configure
+          default-label: develop
